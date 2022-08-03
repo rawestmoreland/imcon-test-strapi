@@ -24,11 +24,11 @@ const IndexPage = () => {
     <Layout>
       <Seo seo={{ metaTitle: "Home" }} />
       <Headings
-        title={strapiGlobal.siteName}
+        title="Heading"
         description={strapiGlobal.siteDescription}
       />
       <main>
-        <ArticlesGrid articles={allStrapiArticle.nodes} />
+        This  is a Main
       </main>
     </Layout>
   )

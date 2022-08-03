@@ -15,11 +15,7 @@ const Seo = ({ seo = {} }) => {
         defaultSeo {
           metaTitle
           metaDescription
-          shareImage {
-            localFile {
-              url
-            }
-          }
+          
         }
       }
     }
