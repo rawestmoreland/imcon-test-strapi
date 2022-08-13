@@ -20,11 +20,7 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ]
+      "allowedTypes": ["images", "files", "videos"]
     },
     "siteDescription": {
       "type": "text",
@@ -34,6 +30,18 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "navbar": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.navbar",
+      "pluginOptions": {}
+    },
+    "footer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.footer",
+      "pluginOptions": {}
     }
   }
 }

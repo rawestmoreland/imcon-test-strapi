@@ -4,7 +4,7 @@
   "info": {
     "singularName": "org",
     "pluralName": "orgs",
-    "displayName": "Org",
+    "displayName": "Organization",
     "description": ""
   },
   "options": {
@@ -40,10 +40,40 @@
       "type": "date",
       "required": true
     },
-    "org_type": {
+    "city_region": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::org-type.org-type"
+      "relation": "manyToOne",
+      "target": "api::city-region.city-region",
+      "inversedBy": "orgs"
+    },
+    "orgSlug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "subcategory": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::subcategory.subcategory",
+      "inversedBy": "orgs"
+    },
+    "resource_category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::resource-category.resource-category",
+      "inversedBy": "orgs"
+    },
+    "us_state": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::us-state.us-state",
+      "inversedBy": "organizations"
+    },
+    "ca_province": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::ca-province.ca-province",
+      "inversedBy": "organizations"
     }
   }
 }
