@@ -20,12 +20,6 @@
       "type": "uid",
       "targetField": "name"
     },
-    "city_regions": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::city-region.city-region",
-      "mappedBy": "us_state"
-    },
     "organizations": {
       "type": "relation",
       "relation": "oneToMany",
@@ -43,8 +37,12 @@
     "resource": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::resource.resource",
-      "inversedBy": "us_state"
+      "target": "api::resource.resource"
+    },
+    "country": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::country.country"
     }
   }
 }

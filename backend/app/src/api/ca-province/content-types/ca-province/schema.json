@@ -22,12 +22,6 @@
       "target": "api::org.org",
       "mappedBy": "ca_province"
     },
-    "city_region": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::city-region.city-region",
-      "mappedBy": "ca_province"
-    },
     "provinceSlug": {
       "type": "uid",
       "targetField": "name"
@@ -43,8 +37,12 @@
     "resource": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::resource.resource",
-      "inversedBy": "ca_province"
+      "target": "api::resource.resource"
+    },
+    "country": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::country.country"
     }
   }
 }

@@ -19,36 +19,6 @@
     "resourceSlug": {
       "type": "uid",
       "targetField": "title"
-    },
-    "us_state": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::us-state.us-state",
-      "inversedBy": "resource"
-    },
-    "city_region": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::city-region.city-region",
-      "inversedBy": "resource"
-    },
-    "resource_category": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::resource-category.resource-category",
-      "inversedBy": "resource"
-    },
-    "resource_subcategory": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::subcategory.subcategory",
-      "inversedBy": "resource"
-    },
-    "ca_province": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::ca-province.ca-province",
-      "inversedBy": "resource"
     }
   }
 }

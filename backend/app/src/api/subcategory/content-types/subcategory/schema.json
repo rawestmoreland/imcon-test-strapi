@@ -43,8 +43,7 @@
     "resource": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::resource.resource",
-      "inversedBy": "resource_subcategory"
+      "target": "api::resource.resource"
     }
   }
 }

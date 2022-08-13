@@ -25,8 +25,7 @@
     "ca_province": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::ca-province.ca-province",
-      "inversedBy": "city_region"
+      "target": "api::ca-province.ca-province"
     },
     "citySlug": {
       "type": "uid",
@@ -34,15 +33,18 @@
     },
     "us_state": {
       "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::us-state.us-state",
-      "inversedBy": "city_regions"
+      "relation": "oneToOne",
+      "target": "api::us-state.us-state"
     },
     "resource": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::resource.resource",
-      "inversedBy": "city_region"
+      "target": "api::resource.resource"
+    },
+    "country": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::country.country"
     }
   }
 }
