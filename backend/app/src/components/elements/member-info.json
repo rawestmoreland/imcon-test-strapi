@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_elements_member_infos",
+  "info": {
+    "displayName": "Member Info",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "memberName": {
+      "type": "string"
+    },
+    "memberPosition": {
+      "type": "string"
+    },
+    "memberLinkUrl": {
+      "type": "string"
+    },
+    "memberLinkText": {
+      "type": "string"
+    }
+  }
+}
