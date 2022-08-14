@@ -4,7 +4,7 @@
   "info": {
     "singularName": "org",
     "pluralName": "orgs",
-    "displayName": "Organization",
+    "displayName": "Organizations",
     "description": ""
   },
   "options": {
@@ -74,6 +74,11 @@
       "relation": "manyToOne",
       "target": "api::ca-province.ca-province",
       "inversedBy": "organizations"
+    },
+    "resource": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::resource.resource"
     }
   }
 }
