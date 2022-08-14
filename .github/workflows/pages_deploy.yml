@@ -23,6 +23,14 @@ jobs:
         run: yarn install --frozen-lockfile
         working-directory: ./frontend
 
+      - name: Make envfile
+        uses: SpicyPizza/create-envfile@v1.3
+        with:
+          envkey_NEXT_PUBLIC_STRAPI_API_URL: ${{ secrets.NEXT_STRAPI_API_URL }}
+          directory: ./frontend
+          file_name: .env
+          fail_on_empty: false
+
       - name: Build my App
         run: yarn run export && touch ./out/.nojekyll
         working-directory: ./frontend
