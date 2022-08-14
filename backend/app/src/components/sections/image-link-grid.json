@@ -6,10 +6,10 @@
   },
   "options": {},
   "attributes": {
-    "imageLInk": {
+    "imageLink": {
       "type": "component",
       "repeatable": true,
-      "component": "links.link-image"
+      "component": "elements.image-link-with-text"
     }
   }
 }

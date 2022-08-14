@@ -10,7 +10,11 @@ export default {
       logo: Icon,
     },
     theme: {
-      colors: {},
+      colors: {
+        primary700: "#133e5dff",
+        primary600: "#1d5b8dff",
+        primary500: "#247ab9ff",
+      },
     },
     translations: {
       en: {
